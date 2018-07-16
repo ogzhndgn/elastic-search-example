@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.thepoet.elasticsearch.model.Book;
 import org.thepoet.elasticsearch.service.BookService;
+import org.thepoet.elasticsearch.service.LogService;
 
 import java.util.List;
 import java.util.Optional;
@@ -20,6 +21,8 @@ public class ElasticSearchExampleApplicationTests {
 
     @Autowired
     private BookService bookService;
+    @Autowired
+    private LogService logService;
 
     private Book expectedBook;
     private Book toBeDeleted;
